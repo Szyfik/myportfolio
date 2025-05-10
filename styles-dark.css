@@ -1,0 +1,254 @@
+body {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  gap: 10px; /* Zmniejszony odstęp między elementami */
+  justify-content: flex-start; /* Wyrównanie do lewej strony */
+  flex-wrap: wrap;
+}
+
+#content h1 {
+  font-family: "Bebas Neue";
+  font-size: 100px;
+  text-align: center;
+  font-weight: bold;
+  background: linear-gradient(45deg, #5680e9, #84a9ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0px 0px 10px rgba(86, 128, 233, 0.3);
+  letter-spacing: 2px;
+}
+
+#content h2 {
+  font-family: "Bebas Neue";
+  font-size: 70px;
+  text-align: center;
+  font-weight: bold;
+  background: linear-gradient(45deg, #5680e9, #84a9ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0px 0px 10px rgba(86, 128, 233, 0.3);
+  letter-spacing: 2px;
+}
+
+#content p {
+  font-family: "Bebas Neue";
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 auto;
+  min-width: 200px;
+  max-width: 600px;
+  margin-top: -40px;
+  margin-bottom: 15px;
+  background: linear-gradient(45deg, #5680e9, #84a9ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0px 0px 10px rgba(86, 128, 233, 0.3);
+  letter-spacing: 2px;
+}
+
+.logo {
+  font-family: "Bebas Neue";
+  font-size: 48px;
+  font-weight: bold;
+  margin-right: 20px;
+  background: linear-gradient(45deg, #5680e9, #84a9ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0px 0px 10px rgba(86, 128, 233, 0.3);
+  letter-spacing: 2px;
+}
+
+.logo:hover {
+  font-size: 49px;
+  transition: font-size .20s;
+}
+
+button {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 25px;
+}
+
+.btn {
+  background-color: #2d4263;
+  color: #ffffff;
+  font-family: "Bebas Neue";
+  font-size: 30px;
+  min-width: 140px;
+  min-height: 55px;
+  max-width: 185px;
+  max-height: 85px;
+  border-radius: 10px;
+  border: 1px solid #5680e9;
+  margin: 0 5px; /* Zmniejszony odstęp między przyciskami */
+}
+
+.btn:hover {
+  box-shadow: 0px 0px 25px #5680e9;
+  background-color: #191d3a;
+  font-size: 32px;
+  min-width: 140px;
+  min-height: 55px;
+  max-width: 185px;
+  max-height: 85px;
+  cursor: pointer;
+  transition: background-color .40s, font-size .30s, width .30s, height .30s;
+}
+
+.btn:active {
+  background-color: #0f3460;
+  box-shadow: 0px 0px 25px #84a9ff;
+}
+
+.btn a {
+  color: inherit; /* Używa koloru tekstu przycisku */
+  text-decoration: none; /* Usuwa podkreślenie */
+}
+
+.CV {
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 20px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  border: 1px solid #5680e9;
+  box-shadow: 0px 0px 25px #6a87cc;
+}
+
+#kontakt-container {
+  display: flex;
+  min-width: 600px;
+  justify-content: space-between; /* Rozkłada elementy na boki */
+  align-items: flex-start; /* Wyrównuje elementy do góry */
+}
+
+#kontaktowy {
+  border-radius: 10px;
+  border: 1px solid #5680e9;
+  box-shadow: 0px 0px 25px #6a87cc;
+  min-width: 300px;
+  width: 500px;
+  height: 525px;
+  margin-left: 125px;
+  padding: 25px 30px;
+}
+
+#kontaktowy p {
+  font-family: "Bebas Neue";
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  background: linear-gradient(45deg, #5680e9, #84a9ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; 
+  text-shadow: 0px 0px 10px rgba(86, 128, 233, 0.3);
+  letter-spacing: 2px;
+  margin: 80px auto;
+}
+
+#kontaktowy a {
+  color: inherit; /* Używa koloru tekstu rodzica */
+  text-decoration: none; /* Usuwa podkreślenie */
+  text-shadow: 0px 0px 10px rgba(86, 221, 233, 0.3);
+}
+
+#kontaktowy a:hover {
+  font-size: 27px;
+  transition: font-size .50s;
+}
+
+#formularz {
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #5680e9;
+  box-shadow: 0px 0px 25px #6a87cc;
+  min-width: 300px;
+  width: 500px;
+  height: 525px;
+  margin-right: 125px;
+  padding: 25px 30px;
+}
+
+#formularz label {
+  font-family: "Bebas Neue";
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  background: linear-gradient(45deg, #5680e9, #84a9ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; 
+  text-shadow: 0px 0px 10px rgba(86, 128, 233, 0.3);
+  letter-spacing: 1px;
+}
+
+#formularz .form-group {
+  margin: 25px auto;
+}
+
+#formularz input, 
+#formularz textarea {
+  border-radius: 10px;
+  border: 1px solid #5680e9;
+  box-shadow: 0px 0px 25px #6a87cc;
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+#formularz button {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 35px;
+  background-color: #2d4263;
+  color: #ffffff;
+  font-family: "Bebas Neue";
+  min-width: 120px;
+  min-height: 15px;
+  max-width: 165px;
+  max-height: 45px;
+  border-radius: 10px;
+  border: 1px solid #5680e9;
+  margin: 15px auto;
+  text-align: center;
+}
+
+#formularz button:hover {
+  box-shadow: 0px 0px 25px #5680e9;
+  background-color: #191d3a;
+  font-size: 37px;
+  min-width: 120px;
+  min-height: 15px;
+  max-width: 165px;
+  max-height: 45px;
+  cursor: pointer;
+  transition: background-color .40s, font-size .30s, width .30s, height .30s;
+}
+
+#formularz button:active {
+  background-color: #0f3460;
+  box-shadow: 0px 0px 25px #84a9ff;
+}
+
+#formularz button a {
+  color: inherit; /* Używa koloru tekstu przycisku */
+  text-decoration: none; /* Usuwa podkreślenie */
+}

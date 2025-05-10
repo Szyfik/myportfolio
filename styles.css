@@ -1,0 +1,50 @@
+body {
+    
+}
+
+#container {
+    display: flex;
+    text-align: left;
+    margin: 0 5px;
+}
+
+#container #title {
+    font-family: "Exo 2";
+    font-size: 40px;
+    background: linear-gradient(red, blue);
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+button {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: auto auto;
+    font-size: 25px;
+}
+
+.btn {
+    background-color: #CCFFFF;
+    font-family: "Bebas Neue";
+    font-size: 30px;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.btn:hover {
+    box-shadow: 0px 0px 25px #7bfcfc;
+    font-size: 32px;
+    width: 155px;
+    height: 55px;
+    cursor: pointer;
+    transition: background-color .40s, font-size .30s, width .30s, height .30s;
+}
+
+.btn:active {
+    background-color: #ccffe5;
+    box-shadow: 0px 0px 25px #ccffe5;
+}
