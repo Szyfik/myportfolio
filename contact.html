@@ -64,35 +64,29 @@
     <script>
         document.getElementById('contactForm').addEventListener('submit', function(event) {
   event.preventDefault();
-  
-  const formData = {
-    name: this.name.value,
-    email: this.email.value,
-    message: this.message.value
-  };
 
-  fetch('myportfolio-backend-production-1d85.up.railway.app', {
+  fetch('https://myportfolio-backend-production-1d85.up.railway.app/contact', { // <-- tu wstaw swój adres Railway!
     method: 'POST',
-    headers: {
-      'Content-Type': 'text/plain' // Unikaj preflight CORS
-    },
-    body: JSON.stringify(formData),
-    redirect: 'follow' // Obsługa przekierowań Google
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      name: document.getElementById('name').value,
+      email: document.getElementById('email').value,
+      message: document.getElementById('message').value
+    })
   })
-  .then(response => {
-    if (response.redirected) return fetch(response.url); // Obsługa przekierowania
-    return response.text();
-  })
+  .then(response => response.json())
   .then(data => {
-    alert('Wiadomość wysłana!');
-    document.getElementById('contactForm').reset();
+    if (data.success) {
+      alert('Wiadomość wysłana!');
+      document.getElementById('contactForm').reset();
+    } else {
+      alert('Wystąpił błąd przy wysyłaniu.');
+    }
   })
   .catch(error => {
-    console.error('Błąd:', error);
-    alert('Wystąpił błąd. Spróbuj ponownie.');
+    alert('Błąd połączenia: ' + error);
   });
 });
-
     </script>
 </body>
 </html>
