@@ -176,7 +176,7 @@ button {
 
 #kontaktowy a:hover {
   font-size: 27px;
-  text-decoration: underline;
+  text-decoration: none;
   transition: font-size .50s, text-decoration .50s;
 }
 
