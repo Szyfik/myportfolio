@@ -168,7 +168,8 @@ button {
 
 #kontaktowy a:hover {
   font-size: 27px;
-  transition: font-size .50s;
+  text-decoration: underline;
+  transition: font-size .50s, text-decoration .50s;
 }
 
 #formularz {
