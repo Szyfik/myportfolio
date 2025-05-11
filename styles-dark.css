@@ -58,7 +58,7 @@ body {
 
 .logo {
   font-family: "Bebas Neue";
-  font-size: 48px;
+  font-size: 46px;
   font-weight: bold;
   margin-right: 20px;
   background: linear-gradient(45deg, #5680e9, #84a9ff);
@@ -72,7 +72,7 @@ body {
 
 .logo:hover {
   font-size: 49px;
-  transition: font-size .20s;
+  transition: font-size .40s;
 }
 
 button {
